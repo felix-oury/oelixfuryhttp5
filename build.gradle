@@ -13,8 +13,10 @@ repositories {
 war{
     from {
 // all of the library jar files used are to be zipped into the war file
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it)
-        } }
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
 }
 // This is required to build the war file successfully
 task stage(dependsOn: ['build', 'clean'])
