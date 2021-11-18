@@ -12,7 +12,7 @@ directories:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
 deploy:
-provider: heroku
-api_key: 78dbf90b-70b0-4395-936b-e87e2b87c05b
-app: oelixfuryhttp5
-skip_cleanup: true
+  provider: heroku
+  api_key: 78dbf90b-70b0-4395-936b-e87e2b87c05b
+  app: oelixfuryhttp5
+  skip_cleanup: true
